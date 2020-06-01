@@ -1,6 +1,6 @@
 # Gucci Messenger
 
-A secure Messaging web app made in PHP.
+A secure Messaging web app made in JavaScript and PHP.
 
 ## Features
 
