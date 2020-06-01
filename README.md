@@ -1,6 +1,6 @@
 # Gucci Messenger
 
-RESTful API for HanApp app.
+A secure Messaging web app made in PHP.
 
 ## Features
 
