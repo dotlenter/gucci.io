@@ -1,2 +1,0 @@
-# gucci.io
-Messaging application

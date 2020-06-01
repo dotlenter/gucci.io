@@ -29,24 +29,7 @@ include_once('includes/onLoad-updateLastSeen.inc.php');
 </style>
 <script src="js/jquery.min.js"></script>	
 <script src="js/jquery-3.2.1.min.js"></script>
-<script>
-		function sendMessage(){
-		if(message_form.message.value == ''){
-			alert("patay");
-			return;
-		}
-		var message = message_form.message.value;
-		var xmlhttp = new XMLHttpRequest();
-
-		xmlhttp.onreadystatechange = function(){
-			if(xmlhttp.readyState==4&&xmlhttp.status==200){
-				document.getElementById('messages_section').innerHTML = xmlhttp.responseText;
-			}
-		}
-		xmlhttp.open('get', 'sendMessage.php?message='+ message, true);
-		xmlhttp.send();
-	}
-</script>
+<script src="js/ajax-sendMessage.js"></script>
 </head>
 <body onload="getConvo()">
 	<div class="body-container">
@@ -83,50 +66,15 @@ include_once('includes/onLoad-updateLastSeen.inc.php');
 					</div>
 				</div>
 			</section>
-			<div class="header-buddy-container">
-
-			</div>
-			<section class="chatbox-container">
-				<div class="chatbox-wrapper">
-					<div class="conversation-container">
-						<div class="conversation-wrapper">
-							<section id="messages-wrapper">
-								<ol id="messages-section">
-									
-								</ol>
-								<?php $_SESSION['currentHeader'] = $_SERVER['REQUEST_URI']; ?>
-								<div class="message-container">
-									<form action="sendMessage.php"  method="post" name="message_form" id="message-form">
-										<textarea placeholder="Enter message here..." rows="4" size="120" name="message" id="textarea-message"></textarea>
-										<button id="button-message-send">Send</button>
-									</form>
-								</div>
-							</section>
-						</div>
-					</div>	
+			<div class="search-container-buddySuggest">
+				<div class="search-wrapper-buddySuggest">
+					<form name="suggestBuddy-form">
+					<input type="text" name="suggestBuddy" placeholder="Enter name here...">
+				</form>
 				</div>
-			</section>
+			</div>
 		</div>
 	</div>
-	<div class="cd-popup" role="alert">
-		<div class="cd-popup-container">
-			<p>Are you sure you want to log out?</p>
-			<ul class="cd-buttons">
-				<li><a href="userout.php" class="yes-toggle-popup">Yes</a></li>
-				<li><a href="javascript:void(0)" class="no-toggle-popup">No</a></li>
-			</ul>
-			<a href="#0" class="cd-popup-close img-replace"></a>
-		</div> <!-- cd-popup-container -->
-	</div> <!-- cd-popup -->
-	<script src="js/checkUserclick.js"></script>
-	<script src="js/ajax-Live-getActivefriends.js"></script>
-	<script src="js/ajax-Live-getFigUserOnline.js"></script>	
-	<script src="js/popup-logout.js"></script>
 	<script src="js/ajax-getConversation.js"></script>
 </body>
 </html>
-<?php 
-
-$_SESSION['buddyID'] = preg_replace("/user=/", "", $_SERVER['QUERY_STRING']);
-
-?>

@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1630px)  {
+	.chatbox-container{
+	  margin-left: 26%;
+	}
+}
+@media only screen and (max-width: 960px)  {
+	
+}
+@media only screen and (max-width: 500px)  {
+
+}
+@media only screen and (max-width: 375px)  {
+	
+	#h3-friendnick{
+		visibility: hidden;
+	}
+}

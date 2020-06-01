@@ -1,0 +1,221 @@
+body{	
+	background: url(resources/sq.jpg) no-repeat center center fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	width: 100%;
+	font-family: Bariol_Regular;
+	font-weight: bold;
+	transition: 0.5;
+	-webkit-transition: 0.5;
+	-moz-transition: 0.5;
+	-o-transition: 0.5;
+}
+.header-container{
+	background: rgb(34, 49, 63);
+	width: 100%;
+	min-width: 1100px;
+	height: 50px;
+	box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.header-wrapper{
+	width: 1020px;
+	margin: 0 auto;
+	position: relative;
+}
+.logo-wrapper{
+	float: left;
+	padding: 2px;
+	margin-top: 7px;
+	color: #97AAC4;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+}
+.logo-wrapper span{
+	float: left;
+	display: block;
+	padding-top: 10px;
+	font-size: 15px;
+	font-family: "Helvetica", sans-serif;
+}
+.logo-wrapper:hover{
+	color:white;
+}
+.logo-wrapper img{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.about-wrapper{
+	height: 100%;
+	margin-left: 10px;
+	float: left;
+	padding: 2px;
+	margin-top: 7px;
+	color: #97AAC4;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+}
+.about-wrapper:hover{
+	color:white;
+}
+.about-wrapper span{
+	float: left;
+	display: block;
+	padding-top: 10px;
+	font-size: 15px;
+	font-family: "Helvetica", sans-serif;
+}
+.search-wrapper{
+	float: right;
+	margin-top: 17px;
+	color: white;
+}
+#signup-link{
+	color: white;
+	font-weight: bold;
+	font-family: Calibri;
+	text-decoration: none;
+}
+.main-wrapper{
+	width: 920px;
+	margin: 0 auto;
+	color:white;
+}
+.maincontent-wrapper{
+	margin-top: 80px;
+	height: 500px;
+}
+.content{
+	padding: 0 20px;
+	word-wrap: break-word;
+	width: 450px;
+	float: left;
+}
+#welcomeMessage{
+	font-size: 24px;
+}
+#h1maincontent{
+	font-size: 34px;
+}
+#mainlogin-form{
+	width: 320px;
+	padding: 14px;
+	background: white;
+	float: left;
+	margin-left: 60px;
+	box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+}
+#mainlogin-form input[type='text']{
+	border-radius: 2px;
+	padding: 6px 5px 6px 5px;
+	border: 1px solid #BDC3C7;
+	font-size: 14px;
+	font-family: "Helvetica";
+	width: 305px;
+}
+#mainlogin-form input[type='password']{
+	border-radius: 2px;
+	padding: 6px 5px 6px 5px;
+	border: 1px solid #BDC3C7;
+	font-size: 14px;
+	font-family: "Helvetica";
+	width: 220px;
+	margin-top: 14px;
+}
+#mainlogin-form button{
+	border-radius: 10px;
+	background: white;
+	padding: 8px 18px 7px 18px;
+	color: #005797;
+	border: 2px solid #005797;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+}
+#mainlogin-form button:hover{
+	background: rgba(0, 87, 151, 0.1);
+}
+#forgotpwd{
+	font-size: 15px;
+	text-decoration: none;
+	color: #548EB8;
+}
+#forgotpwd span{
+	color: black;
+}
+.maincontent-bottom-wrapper{
+	clear: left;
+	width: 100%;
+	padding: 0 20px;
+	height: 180px;
+}
+.maincontent-bottom-wrapper a{
+	color: white;
+	font-size: 14px;
+	font-family: Century Gothic;
+	text-decoration: none;
+	margin-left: 15px;
+	padding: 5px 7px 5px 7px;
+	border: 2px solid white;
+	transition: 0.32s;
+	-webkit-transition: 0.32s;
+	-moz-transition: 0.32s;
+	-o-transition: 0.32s;
+}
+.maincontent-bottom-wrapper a:hover{
+	background: rgb(0,0,0);
+	background: rgba(0,0,0, 0.4);
+}
+#signup-box{
+	width: 260px;
+	background: white;
+	box-shadow: 0 1px 1px 4px rgba(0, 0, 0, 0.16), 0 1px 2px 5px rgba(0, 0, 0, 0.18);
+	border: 1px solid black;
+	border-radius: 2px;
+	position: absolute;
+	padding: 10px;
+	display: none;
+	z-index: 999;
+	right: 0;
+	top: 40px;
+
+}
+#signup-box h3{
+	margin-top: 5px;
+}
+#signup-box input{
+	padding: 6px 5px 6px 5px;
+	width: 90%;
+}
+#signup-box p{
+	font-size: 15px;
+	margin-top: 5px;
+}
+#signup-box p a{
+	text-decoration: none;
+	color: #204a80;
+}
+#signup-box button{
+	margin: 0 auto;
+	width: 100px;
+	height: 35px;
+	border: none;
+	border-radius: 3px;
+	margin-top: 5px;
+	padding: 5px 10px 5px 10px;
+	background: rgb(34, 49, 63);
+	color: white;
+}
+#showhidesgn{
+	font-size: 11px;
+}
